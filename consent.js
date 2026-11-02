@@ -5,7 +5,7 @@ const GA_ID='G-NVHCJTX9R1';
 const KEY='sf_consent',MAX_AGE=180*24*3600*1000; // choice is asked again after ~6 months
 const read=()=>{try{const o=JSON.parse(localStorage.getItem(KEY));return o&&Date.now()-o.t<MAX_AGE?o.c:null}catch(e){return null}};
 const save=c=>{try{localStorage.setItem(KEY,JSON.stringify({c,t:Date.now()}))}catch(e){}};
-const valid=/^G-[A-Z0-9]{6,}$/.test(GA_ID)&&GA_ID!=='G-NVHCJTX9R1';
+const valid=/^G-[A-Z0-9]{6,}$/.test(GA_ID);
 
 function loadGA(){
   if(!valid||window.__gaLoaded)return;
