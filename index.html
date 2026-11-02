@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Free Snake Game Online – Play Snake on Desktop & Mobile | SnakeForFree</title>
+<meta name="description" content="Play the classic Snake game online for free: 3 modes, saved high scores, keyboard and touch controls. No sign-up, works on desktop and mobile.">
+<link rel="canonical" href="https://snakeforfree.com/">
+<meta name="theme-color" content="#e9efcf">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Snake Game Online – Play Snake on Desktop & Mobile | SnakeForFree">
+<meta property="og:description" content="Play the classic Snake game online for free: 3 modes, saved high scores, keyboard and touch controls. No sign-up, works on desktop and mobile.">
+<meta property="og:url" content="https://snakeforfree.com/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐍</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Snake For Free","url":"https://snakeforfree.com","description":"Free online Snake game, playable with keyboard or touch.","genre":"Arcade","gamePlatform":["Web browser","Mobile"],"inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+<header class="top">
+<a class="logo" href="index.html">🐍 Snake<b>ForFree</b></a>
+<nav aria-label="Main navigation">
+<a href="index.html" aria-current="page">Play</a>
+<a href="how-to-play.html">How to play</a>
+<a href="privacy.html">Privacy</a>
+</nav>
+</header>
+<main class="wrap">
+
+<div class="hero">
+<h1>The classic phone Snake, free on any screen</h1>
+<p class="lead">Eat, grow, beat your best score. Arrow keys or WASD on desktop, swipe on mobile. No sign-up.</p>
+</div>
+
+<section class="game" aria-label="Snake game">
+<div class="stats">
+<div><small>Score</small><b id="score">0</b></div>
+<div><small>Best</small><b id="best">0</b></div>
+<div><small>Mode</small><b id="modeName">Classic</b></div>
+<button id="pause" class="icon" aria-label="Pause">❚❚</button>
+</div>
+<div class="board-wrap">
+<canvas id="board" role="img" aria-label="Snake game board"></canvas>
+<div id="overlay" class="overlay">
+<h2 id="ovTitle">Ready?</h2>
+<p id="ovText"></p>
+<button id="play" class="btn">Play</button>
+<button id="share" class="btn ghost" hidden>Share my score</button>
+</div>
+</div>
+<div class="modes" role="group" aria-label="Choose a mode">
+<button data-mode="classic">Classic</button>
+<button data-mode="zen">Zen</button>
+<button data-mode="turbo">Turbo</button>
+</div>
+<div class="dpad" aria-label="Direction pad">
+<button data-d="up" aria-label="Up">▲</button>
+<button data-d="left" aria-label="Left">◀</button>
+<button data-d="down" aria-label="Down">▼</button>
+<button data-d="right" aria-label="Right">▶</button>
+</div>
+<p class="hint">Space or P to pause. Your best score is saved on this device, mode by mode.</p>
+</section>
+
+<h2>Three ways to play</h2>
+<div class="cards">
+<div class="card"><h3>Classic</h3><p>Walls are deadly. The snake speeds up with every apple.</p></div>
+<div class="card"><h3>Zen</h3><p>No walls: leave one side, come back on the other. Perfect for unwinding.</p></div>
+<div class="card"><h3>Turbo</h3><p>Fast from the first second. For sharp reflexes only.</p></div>
+</div>
+<p class="more"><a href="how-to-play.html">Controls, tips and FAQ</a></p>
+
+</main>
+<footer>© 2026 SnakeForFree.com · Free Snake game, no sign-up. <a href="privacy.html">Privacy</a> · <button type="button" class="linklike" data-cookie-settings>Cookie settings</button></footer>
+<script src="consent.js" defer></script>
+<script src="snake.js" defer></script>
+</body>
+</html>

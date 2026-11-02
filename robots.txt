@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://snakeforfree.com/sitemap.xml
