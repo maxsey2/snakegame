@@ -1,6 +1,6 @@
 (()=>{
 // 1) Paste your Google Analytics 4 measurement ID here (looks like G-AB12CD34EF)
-const GA_ID='G-XXXXXXXXXX';
+const GA_ID='G-NVHCJTX9R1';
 
 const KEY='sf_consent',MAX_AGE=180*24*3600*1000; // choice is asked again after ~6 months
 const read=()=>{try{const o=JSON.parse(localStorage.getItem(KEY));return o&&Date.now()-o.t<MAX_AGE?o.c:null}catch(e){return null}};
